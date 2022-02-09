@@ -377,51 +377,74 @@
     </section>
 
     <!-- Онлайн-запись -->
-    <section class="online">
+    <div class="contacts-wrap"></div>
       <div class="container online-container">
-        <div class="online-form-container">
-          <h2 class="online-form-title section-title">Онлайн-запись</h2>
-          <button type="button" class="online-form-btn button">Отправить</button>
-        </div>
+        <section class="online">
+          <div class="online-form-container">
+            <h2 class="online-form-title section-title">Онлайн-запись</h2>
+            <form class="online-form">
+              <input 
+                type="text" 
+                name="user-name" 
+                class="online-input online-input-long"
+                placeholder="Имя*"
+              />
+              <input 
+                type="tel" 
+                name="user-tel" 
+                class="online-input"
+                placeholder="Телефон*"
+              />
+              <textarea 
+                name="user-text" 
+                class="online-text"
+                placeholder="Cообщение">
+              </textarea>
+            </form>
+            <button type="submit" class="online-form-btn button">Отправить</button>
+          </div>
+        </section>
 
-        <div class="contacts-container">
-          <h2 class="contacts-title section-title">Контакты</h2>
+        <section class="contacts">
+          <div class="contacts-container">
+            <h2 class="contacts-title section-title">Контакты</h2>
 
-          <address class="address">
-            <ul class="address-list list">
-              <li class="address-item">
-                <a class="address-link" href="https://goo.gl/maps/YjysKKPajJtUrSyb9"
-                  target="_blank"
-                  rel="noopener noreferrer nofollow"
-                  class="address-map"
-                  aria-label="Map"
-                >
-                  ул. Васильковская, 7А Киев, 08132
-                </a>
-              </li>
-              <li class="address-item">
-                <a class="address-link" href="tel:+380441111111" 
-                  class="address-tel"
-                  aria-label="Phone"
-                >
-                  +38 044 111 11 11
-                </a>
-              </li>
-              <li class="address-item">
-                <a class="address-link" href="mailto:barbershop@email.com" 
-                  class="address-mail"
-                  aria-label="Mail"
-                >
-                  barbershop@email.com
-                </a>
-              </li>
-            </ul>
-          </address>
-          <p class="contacts-text">время работы</p>
-          <p class="contacts-schedule">Ежедневно с 9:00 до 22:00</p>
-        </div>
+            <address class="address">
+              <ul class="address-list list">
+                <li class="address-item">
+                  <a class="address-link" href="https://goo.gl/maps/YjysKKPajJtUrSyb9"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    class="address-map"
+                    aria-label="Map"
+                  >
+                    ул. Васильковская, 7А Киев, 08132
+                  </a>
+                </li>
+                <li class="address-item">
+                  <a class="address-link" href="tel:+380441111111" 
+                    class="address-tel"
+                    aria-label="Phone"
+                  >
+                    +38 044 111 11 11
+                  </a>
+                </li>
+                <li class="address-item">
+                  <a class="address-link" href="mailto:barbershop@email.com" 
+                    class="address-mail"
+                    aria-label="Mail"
+                  >
+                    barbershop@email.com
+                  </a>
+                </li>
+              </ul>
+            </address>
+            <p class="contacts-text">время работы</p>
+            <p class="contacts-schedule">Ежедневно с 9:00 до 22:00</p>
+          </div>
+        </section>
       </div>
-    </section>
+    </div>
   </main>
 
   <!-- Подвал сайта -->
