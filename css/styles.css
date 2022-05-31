@@ -1,6 +1,7 @@
 :root {
   --first-bg-color: #303030;
   --second-bg-color: #ffffff;
+  --third-bg-color: #f7f7f7;
   --header-text-color: #ffffff;
   --first-btn-color: #ffffff;
   --second-btn-color: #303030;
@@ -12,6 +13,7 @@
   --second-text-color: #9da4bd;
   --third-text-color: #555555;
   --social-link-color: #303030;
+  --modal-form-color: rgba(157, 164, 189, 0.4);
   --basic-gap: 20px;
   --transition-cubic: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -491,7 +493,7 @@ a {
   height: 133px;
   padding: 20px 24px;
 
-  background-color: #f7f7f7;
+  background-color: var(--third-bg-color);
 }
 
 .reasons-item:nth-child(odd) {
@@ -551,7 +553,7 @@ a {
   padding-top: 130px;
   padding-bottom: 130px;
 
-  background-color: #f7f7f7;
+  background-color: var(--third-bg-color);
 }
 
 .masters-pre-title {
@@ -750,7 +752,7 @@ a {
   text-transform: uppercase;
 
   border: none;
-  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+  border-bottom: 1px solid var(--modal-form-color);
 
   color: var(--first-title-color);
   background-color: transparent;
@@ -789,7 +791,7 @@ a {
   letter-spacing: 0.1em;
   text-transform: uppercase;
 
-  color: rgba(157, 164, 189, 0.4);
+  color: var(--modal-form-color);
 
   transform: translateY(-50%);
   transition: color 250ms var(--transition-cubic),
@@ -809,7 +811,7 @@ a {
   text-transform: uppercase;
 
   border: none;
-  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+  border-bottom: 1px solid var(--modal-form-color);
 
   resize: none;
   outline: none;
@@ -821,7 +823,7 @@ a {
 }
 
 .online-text::placeholder {
-  color: rgba(157, 164, 189, 0.4);
+  color: var(--modal-form-color);
   transition: color 250ms var(--transition-cubic);
 }
 
@@ -891,7 +893,7 @@ a {
   height: 1px;
 
   margin-right: 20px;
-  background-color: rgba(157, 164, 189, 0.4);
+  background-color: var(--modal-form-color);
 }
 
 .contacts-schedule {
