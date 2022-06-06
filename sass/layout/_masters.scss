@@ -1,0 +1,133 @@
+.masters {
+  padding-top: 130px;
+  padding-bottom: 130px;
+
+  background-color: var(--third-bg-color);
+}
+
+.masters__pre-title {
+  margin-bottom: var(--basic-gap);
+
+  color: var(--first-text-color);
+}
+
+.masters__title {
+  margin-bottom: 44px;
+
+  color: var(--second-title-color);
+}
+
+.masters__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-bottom: -30px;
+}
+
+.masters__item {
+  flex-basis: calc(100% / 3 - 30px);
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+
+.masters__link:hover .overlay {
+  transform: translateY(0);
+}
+
+.masters__link:focus .overlay {
+  transform: translateY(0);
+}
+
+.masters__thumb {
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: block;
+  padding: 50px 30px;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(48, 48, 48, 0.8);
+
+  transform: translateY(101%);
+  transition: transform 250ms var(--transition-cubic);
+}
+
+.overlay__text {
+  font-size: 14px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+
+  color: rgba(255, 108, 0, 0.8);
+}
+
+.card {
+  padding: 30px 82px 0 82px;
+  text-align: center;
+}
+
+.card__title {
+  margin-bottom: 8px;
+
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.39;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--first-text-color);
+}
+
+.card__text {
+  margin-bottom: 30px;
+
+  font-size: 14px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+
+.social-net {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-net__item + .social-net__item {
+  margin-left: 10px;
+}
+
+.social-net__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 44px;
+  height: 44px;
+
+  border: 2px dashed transparent;
+  border-radius: 50%;
+
+  color: var(--second-btn-color);
+  background-color: var(--second-bg-color);
+
+  transition: border-color 250ms var(--transition-cubic),
+    color 250ms var(--transition-cubic);
+}
+
+.social-net__link:hover,
+.social-net__link:focus {
+  border-color: var(--accent-color);
+  color: var(--accent-color);
+}
+
+.social-net__icon {
+  fill: currentColor;
+}

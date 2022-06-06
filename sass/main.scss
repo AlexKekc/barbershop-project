@@ -1,2 +1,21 @@
-@import './header';
-@import './hero';
+@import './base/common';
+
+@import './utils/hidden';
+@import './utils/variables';
+@import './utils/mixins';
+
+@import './components/button';
+@import './components/container';
+@import './components/pre-title';
+@import './components/section-title';
+
+@import './layout/header';
+@import './layout/hero';
+@import './layout/about';
+@import './layout/prices';
+@import './layout/reasons';
+@import './layout/masters';
+@import './layout/gallery';
+@import './layout/online-form';
+@import './layout/contacts';
+@import './layout/footer';
