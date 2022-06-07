@@ -24,15 +24,15 @@
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--first-title-color);
-}
 
-.contacts__text::before {
-  content: '';
-  width: 60px;
-  height: 1px;
+  &::before {
+    content: '';
+    width: 60px;
+    height: 1px;
 
-  margin-right: 20px;
-  background-color: var(--modal-form-color);
+    margin-right: 20px;
+    background-color: var(--modal-form-color);
+  }
 }
 
 .contacts__schedule {
@@ -48,10 +48,10 @@
   font-size: 18px;
   line-height: 1.67;
   letter-spacing: 0.02em;
-}
 
-.address__item:nth-child(3) {
-  text-decoration: underline;
+  &:nth-child(3) {
+    text-decoration: underline;
+  }
 }
 
 .address__item + .address__item {

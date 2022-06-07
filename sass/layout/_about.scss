@@ -59,10 +59,10 @@
 
   transition: color 250ms var(--transition-cubic),
     background-color 250ms var(--transition-cubic);
-}
 
-.about__btn:hover,
-.about__btn:focus {
-  color: var(--first-btn-color);
-  background-color: var(--accent-color);
+  &:hover,
+  &:focus {
+    color: var(--first-btn-color);
+    background-color: var(--accent-color);
+  }
 }

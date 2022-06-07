@@ -24,19 +24,20 @@
 }
 
 .reasons__item {
+  position: relative;
   width: 170px;
   height: 133px;
   padding: 20px 24px;
 
   background-color: var(--third-bg-color);
-}
 
-.reasons__item:nth-child(odd) {
-  margin-right: 30px;
-}
+  &:nth-child(odd) {
+    margin-right: 30px;
+  }
 
-.reasons__item:nth-child(even) {
-  margin-top: 30px;
+  &:nth-child(even) {
+    margin-top: 30px;
+  }
 }
 
 .reasons__item--different {
@@ -53,6 +54,22 @@
   text-align: center;
   letter-spacing: 0.05em;
   color: var(--first-text-color);
+}
+
+.reasons__index {
+  position: absolute;
+  top: 27px;
+  right: 30px;
+  width: 13px;
+  height: 22px;
+
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+
+  color: var(--accent-color);
 }
 
 .reasons__achieve {

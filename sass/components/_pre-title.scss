@@ -8,15 +8,14 @@
   line-height: 1.36;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-}
+  &::before {
+    content: '';
+    width: 60px;
+    height: 1px;
 
-.pre-title::before {
-  content: '';
-  width: 60px;
-  height: 1px;
-
-  margin-right: 20px;
-  background-color: var(--pre-title-color);
+    margin-right: 20px;
+    background-color: var(--pre-title-color);
+  }
 }
 
 .pre-title--dark::before {

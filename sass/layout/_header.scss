@@ -37,11 +37,11 @@
   color: var(--header-text-color);
 
   transition: color 250ms var(--transition-cubic);
-}
 
-.site-nav__link:hover,
-.site-nav__link:focus {
-  color: var(--accent-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .header__contacts {
@@ -60,11 +60,11 @@
 
 .contacts__btn {
   margin-left: 40px;
-}
 
-.contacts__btn:hover,
-.contacts__btn:focus {
-  background-color: var(--accent-color);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
 }
 
 .current {
