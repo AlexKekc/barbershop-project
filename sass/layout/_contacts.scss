@@ -1,16 +1,43 @@
 .contacts__container {
-  padding: 130px 0 130px 140px;
+  padding: 84px 0;
+
+  @include tablet {
+    padding: 100px 0;
+    text-align: left;
+  }
+
+  @include desktop {
+    padding: 130px 0 130px 140px;
+  }
 }
 
 .contacts__title {
   margin-bottom: 40px;
-
-  font-weight: 700;
+  text-align: center;
   color: var(--first-title-color);
+
+  @include tablet {
+    @include font(700, 42px, 1.17, 0.05em);
+    text-align: left;
+  }
 }
 
 .address {
-  margin-bottom: 70px;
+  margin-bottom: 44px;
+  @include desktop {
+    margin-bottom: 70px;
+  }
+}
+
+.schedule__wrapper {
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  @include desktop {
+    display: block;
+  }
 }
 
 .contacts__text {
@@ -18,10 +45,7 @@
   align-items: center;
   margin-bottom: var(--basic-gap);
 
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.36;
-  letter-spacing: 0.1em;
+  @include font(600, 11px, 1.36, 0.1em);
   text-transform: uppercase;
   color: var(--first-title-color);
 
@@ -36,18 +60,13 @@
 }
 
 .contacts__schedule {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.67;
-  letter-spacing: 0.02em;
+  @include font(400, 18px, 1.67, 0.02em);
   color: var(--second-text-color);
 }
 
 .address__item {
+  @include font(400, 18px, 1.67, 0.02em);
   font-style: normal;
-  font-size: 18px;
-  line-height: 1.67;
-  letter-spacing: 0.02em;
 
   &:nth-child(3) {
     text-decoration: underline;
@@ -61,11 +80,7 @@
 .address__link {
   display: flex;
   align-items: center;
-
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.67;
-  letter-spacing: 0.02em;
+  @include font(400, 18px, 1.67, 0.02em);
 
   color: var(--second-text-color);
 }

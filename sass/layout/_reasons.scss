@@ -1,15 +1,38 @@
 .reasons {
-  padding: 121px 0 130px 0;
+  padding: 84px 0;
+
+  @include tablet {
+    padding: 100px 0;
+  }
+
+  @include desktop {
+    padding: 121px 0 130px 0;
+  }
 }
 
 .reasons__container {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column-reverse;
+  padding: 0 30px;
+
+  @include tablet {
+    padding: 0 40px;
+  }
+
+  @include desktop {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+  }
 }
 
 .reasons__results,
 .reasons__info {
-  width: calc((100% - 30px) / 2);
+  width: 100%;
+
+  @include desktop {
+    width: calc((100% - 30px) / 2);
+  }
 }
 
 .reasons__results {
@@ -18,25 +41,53 @@
 }
 
 .reasons__list {
-  display: flex;
-  flex-wrap: wrap;
-  width: 370px;
+  @include mobile {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @include tablet {
+    justify-content: flex-end;
+  }
+
+  @include desktop {
+    width: 370px;
+  }
 }
 
 .reasons__item {
   position: relative;
-  width: 170px;
+  width: 194px;
   height: 133px;
-  padding: 20px 24px;
+  padding: 20px 36px;
 
   background-color: var(--third-bg-color);
-
-  &:nth-child(odd) {
-    margin-right: 30px;
+  &:not(:nth-child(4)) {
+    margin-bottom: 15px;
   }
 
-  &:nth-child(even) {
-    margin-top: 30px;
+  @include mobile {
+    &:nth-child(odd) {
+      margin-bottom: 0;
+      margin-right: 30px;
+    }
+
+    &:nth-child(even) {
+      margin-bottom: 0;
+      margin-top: 30px;
+    }
+  }
+
+  @include tablet {
+    width: 210px;
+    padding: 20px 44px;
+  }
+
+  @include desktop {
+    width: 170px;
+    padding: 20px 24px;
   }
 }
 
@@ -48,11 +99,8 @@
   display: block;
   text-align: center;
   margin-bottom: 6px;
-  font-weight: 700;
-  font-size: 42px;
-  line-height: 1.36;
+  @include font(700, 42px, 1.36, 0.05em);
   text-align: center;
-  letter-spacing: 0.05em;
   color: var(--first-text-color);
 }
 
@@ -65,17 +113,13 @@
 
   font-family: 'Open Sans';
   font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 22px;
+  @include font(600, 16px, 1.38, 0.05em);
 
   color: var(--accent-color);
 }
 
 .reasons__achieve {
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.36;
+  @include font(600, 11px, 1.36, 0.05em);
   text-align: center;
   color: var(--first-text-color);
 }
@@ -88,13 +132,20 @@
 
 .reasons__title {
   margin-bottom: var(--basic-gap);
-
   color: var(--second-title-color);
+
+  @include tablet {
+    width: 420px;
+    @include font(700, 42px, 1.17, 0.05em);
+  }
 }
 
 .reasons__after-title {
-  font-size: 18px;
-  line-height: 1.67;
-  letter-spacing: 0.02em;
+  @include font(400, 18px, 1.67, 0.02em);
+  margin-bottom: 29px;
   color: var(--third-text-color);
+
+  @include tablet {
+    width: 500px;
+  }
 }

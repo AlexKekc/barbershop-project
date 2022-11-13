@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="uk">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -33,29 +33,29 @@
 
         <ul class="site-nav list">
           <li class="site-nav__item">
-            <a href="#about" class="site-nav__link">О нас</a>
+            <a href="#about" class="site-nav__link">Про нас</a>
           </li>
           <li class="site-nav__item">
-            <a href="#prices" class="site-nav__link">Услуги и цены</a>
+            <a href="#prices" class="site-nav__link">Послуги та ціни</a>
           </li>
           <li class="site-nav__item">
-            <a href="#masters" class="site-nav__link">Мастера</a>
+            <a href="#masters" class="site-nav__link">Майстри</a>
           </li>
           <li class="site-nav__item">
-            <a href="#reasons" class="site-nav__link">Почему мы?</a>
+            <a href="#reasons" class="site-nav__link">Чому ми?</a>
           </li>
           <li class="site-nav__item">
             <a href="#gallery" class="site-nav__link">Галерея</a>
           </li>
           <li class="site-nav__item">
-            <a href="#contacts" class="site-nav__link">Контакты</a>
+            <a href="#contacts" class="site-nav__link">Контакти</a>
           </li>
         </ul>
       </nav>
 
       <div class="contacts header__contacts">
         <a href="tel:+380441111111" class="contacts__tel" aria-label="Phone">+38 044 111 11 11</a>
-        <button type="button" class="contacts__btn btn btn--light">онлайн-запись</button>
+        <button type="button" class="contacts__btn btn btn--light">онлайн-запис</button>
       </div>
     </div>
   </header>
@@ -68,7 +68,7 @@
           <ul class="social__list list">
             <li class="social__item">
               <a 
-                href="" 
+                href="https://www.instagram.com/" 
                 class="social__link" 
                 target="_blank" 
                 rel="noopener noreferrer nofollow" 
@@ -78,7 +78,7 @@
             </li>
             <li class="social__item">
               <a 
-                href="" 
+                href="https://www.youtube.com/" 
                 class="social__link"
                 target="_blank" 
                 rel="noopener noreferrer nofollow"  
@@ -97,159 +97,188 @@
             BarberShop
           </h1>
           <p class="hero-main__after-title">
-            Мы эксперты в модных мужских стрижках <br />
-            Работаем быстро, осторожно и со вкусом
+            Ми експерти в модних чоловічих зачісках <br />
+            Працюємо швидко, обережно та зі смаком
           </p>
         </div>
       </div>
     </section>
 
-    <!-- О нас --> 
+    <!-- Про нас --> 
     <section class="about" id="about">
       <div class="container about__container">
         <ul class="about__list list">
           <li class="about__item">
-            <img 
-              src="./images/beard.jpg" 
-              alt="Барбер бреет бороду клиенту" 
-              width="270" 
-              height="445"
+            <picture>
+              <source
+                srcset="./images/beard.jpg 1x, ./images/beard@2x.jpg 2x"
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="./images/beard-tab.jpg 1x, ./images/beard-tab@2x.jpg 2x"
+                media="(min-width: 768px)"
+              />
+              <img 
+                src="./images/beard.jpg" 
+                alt="Барбер бриє бороду клієнту" 
             />
+            </picture>
           </li>
           <li class="about__item">
-            <img 
-              src="./images/hair.jpg" 
-              alt="Барбер делает стрижку клиенту" 
-              width="270" 
-              height="445"
-            />
+            <picture>
+              <source
+                srcset="./images/hair.jpg 1x, ./images/hair@2x.jpg 2x"
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="./images/hair-tab.jpg 1x, ./images/hair-tab@2x.jpg 2x"
+                media="(min-width: 768px)"
+              />
+              <img 
+                src="./images/hair.jpg" 
+                alt="Барбер робить стрижку клієнту" 
+              />
+            </picture>
           </li>
         </ul>
 
         <div class="about__wrap">
-          <p class="about__pre-title pre-title pre-title--dark">О нас</p>
-          <h2 class="about__title section-title">Лучший Барбершоп твоего города</h2>
+          <p class="about__pre-title pre-title pre-title--dark">Про нас</p>
+          <h2 class="about__title section-title">Кращий Барбершоп <br /> твого міста</h2>
           <p class="about__after-title">
-            Если ты хочешь добавить в свой образ больше уверенности – тебе точно к нам
+            Якщо ти хочеш додати в свій образ більше впевненості - тобі точно до нас
           </p>
           <p class="about__text">
-            Мы команда, которая никогда не останавливается на достигнутом
-            и жаждет перемен. И когда ты попадешь в руки нашего мастера,
-            то уже никогда не сможешь быть прежним. Мы команда, которая всегда с клиентами "на одной волне". 
-            Поэтому, мы всегда готовы усовершенствовать каждого, кто к нам приходит!
+            Ми команда, яка ніколи не зупиняється на досягнутому та жадає змін.
+            I коли ти потрапляєш в руки нашого майстра, то вже ніколи не зможеш бути колишнім. 
+            Ми команда, яка завжди з клієнтами "на одній хвилі".
+            Тому, ми завжди готові покращити кожного, хто до нас приходить!
           </p>
-          <button type="button" class="about__btn btn">онлайн-запись</button>
+          <button type="button" class="about__btn btn">онлайн-запис</button>
         </div>
       </div>
     </section>
 
-    <!-- Услуги и цены -->
+    <!-- Послуги та ціни -->
     <section class="prices" id="prices">
       <div class="container prices__container">
-        <p class="prices__pre-title pre-title">Проведи время в компании лучших мастеров</p>
-        <h2 class="prices__title section-title">Услуги и цены</h2>
+        <p class="prices__pre-title pre-title">Проведи час в компанії кращих майстрів</p>
+        <h2 class="prices__title section-title">Послуги та ціни</h2>
 
         <div class="prices__wrap">
           <ul class="prices__list list">
             <li class="prices__item">
-              <p class="prices__text">Мужская стрижка</p>
-              <p class="prices__text">от 300 грн.</p>
+              <p class="prices__text">Чоловіча стрижка</p>
+              <p class="prices__text">від 300 грн.</p>
             </li>
             <li class="prices__item">
-              <p class="prices__text">Стрижка бороды</p>
-              <p class="prices__text">от 200 грн.</p>
+              <p class="prices__text">Стрижка бороди</p>
+              <p class="prices__text">від 200 грн.</p>
             </li>
             <li class="prices__item">
-              <p class="prices__text">Стрижка усов</p>
-              <p class="prices__text">от 200 грн.</p>
+              <p class="prices__text">Стрижка вусів</p>
+              <p class="prices__text">від 200 грн.</p>
             </li>
             <li class="prices__item">
-              <p class="prices__text">Бритье опасной бритвой</p>
-              <p class="prices__text">от 200 грн.</p>
+              <p class="prices__text">Бриття небезпечною бритвою</p>
+              <p class="prices__text">від 200 грн.</p>
             </li>
           </ul>
         
           <ul class="prices__list list">
             <li class="prices__item">
-              <p class="prices__text">Cтрижка у стажера</p>
-              <p class="prices__text">от 50 грн.</p>
+              <p class="prices__text">Cтрижка в стажера</p>
+              <p class="prices__text">від 50 грн.</p>
             </li>
             <li class="prices__item">
-              <p class="prices__text">Cтрижка у стажера</p>
-              <p class="prices__text">от 200 грн.</p>
+              <p class="prices__text">Cтрижка не в стажера</p>
+              <p class="prices__text">від 200 грн.</p>
             </li>
             <li class="prices__item">
-              <p class="prices__text">Детская стрижка (до 12 лет)</p>
-              <p class="prices__text">от 300 грн.</p>
+              <p class="prices__text">Дитяча стрижка (до 12 років)</p>
+              <p class="prices__text">від 300 грн.</p>
             </li>
             <li class="prices__item">
-              <p class="prices__text">Камуфлирование седины</p>
-              <p class="prices__text">от 200 грн.</p>
+              <p class="prices__text">Камуфлювання сивини</p>
+              <p class="prices__text">від 200 грн.</p>
             </li>
           </ul>
         </div>
 
-        <button type="button" class="prices__btn btn">онлайн-запись</button>
+        <button type="button" class="prices__btn btn">онлайн-запис</button>
       </div>
     </section>
 
-    <!-- Почему выбирают нас -->
+    <!-- Чому обирають нас -->
     <section class="reasons" id="reasons">
       <div class="container reasons__container">
         <div class="reasons__results">
           <ul class="reasons__list list">
             <li class="reasons__item">
               <span class="reasons__count">600</span><sup class="reasons__index">+</sup>
-              <p class="reasons__achieve">Довольных клиентов в день</p>
+              <p class="reasons__achieve">Задоволених клієнтів в день</p>
             </li>
             <li class="reasons__item">
               <span class="reasons__count">50</span><sup class="reasons__index">+</sup>
-              <p class="reasons__achieve">Наград за отличный сервис</p>
+              <p class="reasons__achieve">Нагород за чудовий сервіс</p>
             </li>
             <li class="reasons__item">
               <span class="reasons__count">20</span><sup class="reasons__index">+</sup>
-              <p class="reasons__achieve">Лучших мастеров Киева</p>
+              <p class="reasons__achieve">Кращих майстрів Києва</p>
             </li>
             <li class="reasons__item reasons__item--different">
               <span class="reasons__count">100</span><sup class="reasons__index">+</sup>
-              <p class="reasons__achieve">Подарков постоянным клиентам</p>
+              <p class="reasons__achieve">Подарунків постійним клієнтам</p>
             </li>
           </ul>
         </div>
 
         <div class="reasons__info">
-          <p class="reasons__pre-title pre-title pre-title--dark">Старая традиционная школа</p>
-          <h2 class="reasons__title section-title">Почему приходят именно к нам?</h2>
+          <p class="reasons__pre-title pre-title pre-title--dark">Стара традиційна школа</p>
+          <h2 class="reasons__title section-title">Чому приходять саме до нас?</h2>
           <p class="reasons__after-title">
-            О нас говорят только хорошее. Но лучше 1 раз увидеть и
-            прочувствовать, чем 10 раз прочитать
+            Про нас говорять тільки хороше. Але краще 1 раз побачити та
+            відчути, чим 10 разів прочитати
           </p>
         </div>
       </div>
     </section>
 
-    <!-- Наши мастера -->
+    <!-- Наші майстри -->
     <section class="masters" id="masters">  
       <div class="container masters__container">
-        <p class="masters__pre-title pre-title pre-title--dark">Для настоящих ценителей атмосферы</p>
-        <h2 class="masters__title section-title">Наши мастера</h2>
+        <p class="masters__pre-title pre-title pre-title--dark">Для справжніх поціновувачів атмосфери</p>
+        <h2 class="masters__title section-title">Наші майстри</h2>
 
         <ul class="masters__list list">
           <li class="masters__item">
             <a href="" class="masters__link">
               <div class="masters__thumb">
-                <img 
-                  src="./images/barber-1.jpg" 
-                  alt="Барбер стрижет шею" 
-                  width="370" 
-                  height="346"
-                />
+                <picture>
+                  <source
+                    srcset="./images/barber-1.jpg 1x, ./images/barber-1@2x.jpg 2x"
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="./images/barber-1-tab.jpg 1x, ./images/barber-1-tab@2x.jpg 2x"
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="./images/barber-1-mob.jpg 1x, ./images/barber-1-mob@2x.jpg 2x"
+                    media="(min-width: 320px)"
+                  />
+                  <img 
+                    src="./images/barber-1.jpg" 
+                    alt="Барбер стриже шию" 
+                  />
+                </picture>
+                
                 <div class="overlay">
                   <p class="overlay__text">
-                    <span lang="en">John Smith</span> - мужской парикмахер, цирюльник, брадобрей и просто приятный собеседник, который может поддержать беседу
-                    практически на любую тему. Он предложит Вам услуги мужской стрижки, королевского бритья, ухода и стрижки бороды.
-                    При этом Вы сможете расслабится и отвлечься от работы, выпить чашечку кофе, выкурить сигару или выпить стакан виски в
-                    спокойной обстановке в дали от мирской суеты
+                    <span lang="en">John Smith</span> - чоловічий перукар, цирульник i просто приємний співрозмовник, який може підтримати розмову
+                    практично на будь-яку тему. Він запропонує Вам послуги чоловічої стрижки, королівського гоління, догляду та стрижки бороди.
+                    При цьому Ви зможете розслабитися i відволіктися від роботи, випити чашку кави, викурити сигару або випити склянку віскі в
+                    спокійній обстановці вдалині від мирської метушні
                   </p>
                 </div>
               </div>
@@ -259,28 +288,28 @@
                 
                 <ul class="social-net list">
                   <li class="social-net__item">
-                    <a href="" class="social-net__link" aria-label="Instagram">
+                    <a href="https://www.instagram.com/" class="social-net__link" target="_blank" rel="noopener noreferrer nofollow" aria-label="Instagram">
                       <svg class="social-net__icon" width="20" height="20">
                         <use href="./images/icons.svg#icon-instagram"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social-net__item">
-                    <a href="" class="social-net__link" aria-label="Twitter">
+                    <a href="https://twitter.com/" class="social-net__link" target="_blank" rel="noopener noreferrer nofollow" aria-label="Twitter">
                       <svg class="social-net__icon" width="20" height="20">
                         <use href="./images/icons.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social-net__item">
-                    <a href="" class="social-net__link" aria-label="Facebook">
+                    <a href="https://www.facebook.com/" class="social-net__link" target="_blank" rel="noopener noreferrer nofollow" aria-label="Facebook">
                       <svg class="social-net__icon" width="20" height="20">
                         <use href="./images/icons.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social-net__item">
-                    <a href="" class="social-net__link" aria-label="LinkedIn">
+                    <a href="https://www.linkedin.com/" class="social-net__link" target="_blank" rel="noopener noreferrer nofollow" aria-label="LinkedIn">
                       <svg class="social-net__icon" width="20" height="20">
                         <use href="./images/icons.svg#icon-linkedin"></use>
                       </svg>
@@ -293,18 +322,31 @@
           <li class="masters__item">
             <a href="" class="masters__link">
               <div class="masters__thumb">
-                <img 
-                  src="./images/barber-2.jpg" 
-                  alt="Барбер делает пробор" 
-                  width="370" 
-                  height="346"
-                />
+                <picture>
+                  <source
+                    srcset="./images/barber-2.jpg 1x, ./images/barber-2@2x.jpg 2x"
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="./images/barber-2-tab.jpg 1x, ./images/barber-2-tab@2x.jpg 2x"
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="./images/barber-2-mob.jpg 1x, ./images/barber-2-mob@2x.jpg 2x"
+                    media="(min-width: 320px)"
+                  />
+                  <img 
+                    src="./images/barber-2.jpg" 
+                    alt="Барбер робить пробор" 
+                  />
+                </picture>
+
                 <div class="overlay">
                   <p class="overlay__text">
-                    <span lang="en">Michele Doe</span> - мужской парикмахер, цирюльник, брадобрей и просто приятный собеседник, который может поддержать беседу
-                    практически на любую тему. Он предложит Вам услуги мужской стрижки, королевского бритья, ухода и стрижки бороды.
-                    При этом Вы сможете расслабится и отвлечься от работы, выпить чашечку кофе, выкурить сигару или выпить стакан виски
-                    в спокойной обстановке в дали от мирской суеты
+                    <span lang="en">Michele Doe</span> - чоловічий перукар, цирульник i просто приємний співрозмовник, який може підтримати розмову
+                    практично на будь-яку тему. Він запропонує Вам послуги чоловічої стрижки, королівського гоління, догляду та стрижки бороди.
+                    При цьому Ви зможете розслабитися i відволіктися від роботи, випити чашку кави, викурити сигару або випити склянку віскі в
+                    спокійній обстановці вдалині від мирської метушні
                   </p>
                 </div>
               </div>
@@ -314,28 +356,28 @@
 
                 <ul class="social-net list">
                   <li class="social-net__item">
-                    <a href="" class="social-net__link" aria-label="Instagram">
+                    <a href="https://www.instagram.com/" class="social-net__link" target="_blank" rel="noopener noreferrer nofollow" aria-label="Instagram">
                       <svg class="social-net__icon" width="20" height="20">
                         <use href="./images/icons.svg#icon-instagram"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social-net__item">
-                    <a href="" class="social-net__link" aria-label="Twitter">
+                    <a href="https://twitter.com/" class="social-net__link" target="_blank" rel="noopener noreferrer nofollow" aria-label="Twitter">
                       <svg class="social-net__icon" width="20" height="20">
                         <use href="./images/icons.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social-net__item">
-                    <a href="" class="social-net__link" aria-label="Facebook">
+                    <a href="https://www.facebook.com/" class="social-net__link" target="_blank" rel="noopener noreferrer nofollow" aria-label="Facebook">
                       <svg class="social-net__icon" width="20" height="20">
                         <use href="./images/icons.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social-net__item">
-                    <a href="" class="social-net__link" aria-label="LinkedIn">
+                    <a href="https://www.linkedin.com/" class="social-net__link" target="_blank" rel="noopener noreferrer nofollow" aria-label="LinkedIn">
                       <svg class="social-net__icon" width="20" height="20">
                         <use href="./images/icons.svg#icon-linkedin"></use>
                       </svg>
@@ -348,19 +390,31 @@
           <li class="masters__item">
             <a href="" class="masters__link">
               <div class="masters__thumb">
-                <img
-                  src="./images/barber-3.jpg" 
-                  alt="Барбер стрижет челку" 
-                  width="370" 
-                  height="346"
-                />
+                <picture>
+                  <source
+                    srcset="./images/barber-3.jpg 1x, ./images/barber-3@2x.jpg 2x"
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="./images/barber-3-tab.jpg 1x, ./images/barber-3-tab@2x.jpg 2x"
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="./images/barber-3-mob.jpg 1x, ./images/barber-3-mob@2x.jpg 2x"
+                    media="(min-width: 320px)"
+                  />
+                  <img 
+                    src="./images/barber-3.jpg" 
+                    alt="Барбер стриже чуба" 
+                  />
+                </picture>
+
                 <div class="overlay">
                   <p class="overlay__text">
-                    <span lang="en">Alan Black</span> - мужской парикмахер, цирюльник, брадобрей и просто приятный собеседник, который
-                    может поддержать беседу
-                    практически на любую тему. Он предложит Вам услуги мужской стрижки, королевского бритья, ухода и стрижки бороды.
-                    При этом Вы сможете расслабится и отвлечься от работы, выпить чашечку кофе, выкурить сигару или выпить стакан виски
-                    в спокойной обстановке в дали от мирской суеты
+                    <span lang="en">Alan Black</span> - чоловічий перукар, цирульник i просто приємний співрозмовник, який може підтримати розмову
+                    практично на будь-яку тему. Він запропонує Вам послуги чоловічої стрижки, королівського гоління, догляду та стрижки бороди.
+                    При цьому Ви зможете розслабитися i відволіктися від роботи, випити чашку кави, викурити сигару або випити склянку віскі в
+                    спокійній обстановці вдалині від мирської метушні
                   </p>
                 </div>
               </div>
@@ -370,28 +424,28 @@
 
                 <ul class="social-net list">
                   <li class="social-net__item">
-                    <a href="" class="social-net__link" aria-label="Instagram">
+                    <a href="https://www.instagram.com/" class="social-net__link" target="_blank" rel="noopener noreferrer nofollow" aria-label="Instagram">
                       <svg class="social-net__icon" width="20" height="20">
                         <use href="./images/icons.svg#icon-instagram"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social-net__item">
-                    <a href="" class="social-net__link" aria-label="Twitter">
+                    <a href="https://twitter.com/" class="social-net__link" target="_blank" rel="noopener noreferrer nofollow" aria-label="Twitter">
                       <svg class="social-net__icon" width="20" height="20">
                         <use href="./images/icons.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social-net__item">
-                    <a href="" class="social-net__link" aria-label="Facebook">
+                    <a href="https://www.facebook.com/" class="social-net__link" target="_blank" rel="noopener noreferrer nofollow" aria-label="Facebook">
                       <svg class="social-net__icon" width="20" height="20">
                         <use href="./images/icons.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social-net__item">
-                    <a href="" class="social-net__link" aria-label="LinkedIn">
+                    <a href="https://www.linkedin.com/" class="social-net__link" target="_blank" rel="noopener noreferrer nofollow" aria-label="LinkedIn">
                       <svg class="social-net__icon" width="20" height="20">
                         <use href="./images/icons.svg#icon-linkedin"></use>
                       </svg>
@@ -408,61 +462,99 @@
     <!-- Галерея -->
     <section class="gallery" id="gallery">
       <div class="container gallery__container">
-        <p class="gallery__pre-title pre-title pre-title--dark">На латинском языке “барба” означает “борода”</p>
+        <p class="gallery__pre-title pre-title pre-title--dark">Латинською мовою “барба” значить “борода”</p>
         <h2 class="visually-hidden">Галерея</h2>
         
         <ul class="gallery__list list">
           <li class="gallery__item">
-            <div class="scene scene--card">
-              <div class="card">
-                <div class="card__face card__face--front">
-                  <!-- <img
-                    src="./images/barber-4.jpg" 
-                    alt="Барбер делает стрижку клиенту" 
-                    width="270" 
-                    height="360"
-                  /> -->
-                  Текст
-                </div>
-                <div class="card__face card__face--back">
-                  Текст
-                </div>
-              </div>
-            </div>
+            <picture>
+              <source
+                srcset="./images/barber-4.jpg 1x, ./images/barber-4@2x.jpg 2x"
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="./images/barber-4-tab.jpg 1x, ./images/barber-4-tab@2x.jpg 2x"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="./images/barber-4-mob.jpg 1x, ./images/barber-4-mob@2x.jpg 2x"
+                media="(min-width: 320px)"
+              />
+              <img 
+                src="./images/barber-4.jpg" 
+                alt="Барбер робить стрижку клієнту" 
+              />
+            </picture>
           </li>
           <li class="gallery__item">
-            <img 
-              src="./images/barber-5.jpg" 
-              alt="Барбер бреет бороду клиенту" 
-              width="270" 
-              height="360"
-            />
+            <picture>
+              <source
+                srcset="./images/barber-5.jpg 1x, ./images/barber-5@2x.jpg 2x"
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="./images/barber-5-tab.jpg 1x, ./images/barber-5-tab@2x.jpg 2x"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="./images/barber-5-mob.jpg 1x, ./images/barber-5-mob@2x.jpg 2x"
+                media="(min-width: 320px)"
+              />
+              <img 
+                src="./images/barber-5.jpg" 
+                alt="Барбер бриє бороду клієнту" 
+              />
+            </picture>
           </li>
           <li class="gallery__item">
-            <img 
-              src="./images/barber-6.jpg" 
-              alt="Барбер греет голову клиенту" 
-              width="270"
-              height="360"
-            />
+            <picture>
+              <source
+                srcset="./images/barber-6.jpg 1x, ./images/barber-6@2x.jpg 2x"
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="./images/barber-6-tab.jpg 1x, ./images/barber-6-tab@2x.jpg 2x"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="./images/barber-6-mob.jpg 1x, ./images/barber-6-mob@2x.jpg 2x"
+                media="(min-width: 320px)"
+              />
+              <img 
+                src="./images/barber-6.jpg" 
+                alt="Барбер бриє голову клієнту" 
+              />
+            </picture>
           </li>
           <li class="gallery__item">
-            <img 
-              src="./images/barber-7.jpg" 
-              alt="Барбер бреет шею клиенту" 
-              width="270" 
-              height="360"
-            />
+            <picture>
+              <source
+                srcset="./images/barber-7.jpg 1x, ./images/barber-7@2x.jpg 2x"
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="./images/barber-7-tab.jpg 1x, ./images/barber-7-tab@2x.jpg 2x"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="./images/barber-7-mob.jpg 1x, ./images/barber-7-mob@2x.jpg 2x"
+                media="(min-width: 320px)"
+              />
+              <img 
+                src="./images/barber-7.jpg" 
+                alt="Барбер бриє шию клієнту" 
+              />
+            </picture>
           </li>
         </ul>
       </div>
     </section>
 
-    <!-- Онлайн-запись -->
+    <!-- Онлайн-запис -->
     <div class="online-contacts">
       <div class="container online-contacts__container">
         <section class="online">
-          <h2 class="online__title section-title">Онлайн-запись</h2>
+          <h2 class="online__title section-title">Онлайн-запис</h2>
           <form class="online__form">
             <div class="online__wrap">
               <div class="online__animation">
@@ -474,7 +566,7 @@
                   id="user-name"
                   placeholder="1"
                 />
-                <label for="user-name" class="online__label">Имя*</label>
+                <label for="user-name" class="online__label">Ім&#39;я*</label>
               </div>
               <div class="online__animation">
                 <input 
@@ -492,15 +584,15 @@
             <textarea 
               name="user-text" 
               class="online__text"
-              placeholder="Cообщение"
+              placeholder="Повідомлення"
             ></textarea>
-            <button type="submit" class="online__btn btn">Отправить</button>
+            <button type="submit" class="online__btn btn">Відправити</button>
           </form>
         </section>
 
         <section class="contacts" id="contacts">
           <div class="contacts__container">
-            <h2 class="contacts__title section-title">Контакты</h2>
+            <h2 class="contacts__title section-title">Контакти</h2>
 
             <address class="address-connect">
               <ul class="address list">
@@ -516,7 +608,7 @@
                     <svg class="address__icon" width="24" height="24">
                       <use href="./images/icons.svg#icon-map-pin"></use>
                     </svg>
-                    ул. Васильковская, 7А </br> Киев, 08132
+                    вул. Васильківська, 7А, Київ, 08132
                   </a>
                 </li>
                 <li class="address__item">
@@ -547,15 +639,17 @@
                 </li>
               </ul>
             </address>
-            <p class="contacts__text">время работы</p>
-            <p class="contacts__schedule">Ежедневно с 9:00 до 22:00</p>
+            <div class="schedule__wrapper">
+              <p class="contacts__text">час роботи</p>
+              <p class="contacts__schedule">Щоденно з 9:00 до 22:00</p>
+            </div>
           </div>
         </section>
       </div>
     </div>
   </main>
 
-  <!-- Подвал сайта -->
+  <!-- Підвал сайта -->
   <footer class="footer">
     <div class="container footer__container">
       <p class="footer__copyright">&copy; Copyright 2020</p>
@@ -563,7 +657,7 @@
       <ul class="footer__list list">
         <li class="footer__item">
           <a 
-            href="" 
+            href="https://www.instagram.com/" 
             class="footer__link" 
             target="_blank" 
             rel="noopener noreferrer nofollow"
@@ -573,7 +667,7 @@
         </li>
         <li class="footer__item">
           <a 
-            href="" 
+            href="https://www.youtube.com/" 
             class="footer__link" 
             target="_blank" 
             rel="noopener noreferrer nofollow" 

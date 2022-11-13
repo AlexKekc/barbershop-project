@@ -1,6 +1,25 @@
 .gallery {
-  padding-top: 130px;
-  padding-bottom: 130px;
+  padding: 84px 0;
+
+  @include tablet {
+    padding: 100px 0;
+  }
+
+  @include desktop {
+    padding: 130px 0;
+  }
+}
+
+.gallery__container {
+  padding: 0 30px;
+
+  @include tablet {
+    padding: 0 40px;
+  }
+
+  @include desktop {
+    padding: 0;
+  }
 }
 
 .gallery__pre-title {
@@ -10,56 +29,31 @@
 }
 
 .gallery__list {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -30px;
+  @include tablet {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-bottom: -30px;
+  }
+
+  @include desktop {
+    margin-bottom: 0;
+  }
 }
 
 .gallery__item {
-  flex-basis: calc(100% / 4 - 30px);
-  margin-left: 30px;
-}
+  &:not(:nth-child(4)) {
+    margin-bottom: 30px;
+  }
 
-// Проба
+  @include tablet {
+    flex-basis: calc(100% / 2 - 30px);
+    margin-left: 30px;
+    margin-bottom: 30px;
+  }
 
-.scene {
-  width: 270px;
-  height: 360px;
-  border: 1px solid #ccc;
-  perspective: 1200px;
-}
-
-.card {
-  width: 100%;
-  height: 100%;
-  transition: transform 1s;
-  transform-style: preserve-3d;
-  cursor: pointer;
-  position: relative;
-}
-
-.card.is-flipped {
-  transform: rotateY(180deg);
-}
-
-.card__face {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  line-height: 360px;
-  color: white;
-  text-align: center;
-  font-weight: bold;
-  font-size: 40px;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
-
-.card__face--front {
-  background: red;
-}
-
-.card__face--back {
-  background: blue;
-  transform: rotateY(180deg);
+  @include desktop {
+    flex-basis: calc(100% / 4 - 30px);
+    margin-left: 30px;
+  }
 }
