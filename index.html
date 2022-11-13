@@ -30,7 +30,11 @@
             <use href="./images/icons.svg#icon-logo"></use>
           </svg>
         </a>
-
+        <button type="button" class="menu-open-btn">
+          <svg class="menu-open-btn__icon" width="40" height="40">
+            <use href="./images/icons.svg#mobile-burger-icon"></use>
+          </svg>
+        </button>
         <ul class="site-nav list">
           <li class="site-nav__item">
             <a href="#about" class="site-nav__link">Про нас</a>
@@ -55,7 +59,71 @@
 
       <div class="contacts header__contacts">
         <a href="tel:+380441111111" class="contacts__tel" aria-label="Phone">+38 044 111 11 11</a>
-        <button type="button" class="contacts__btn btn btn--light">онлайн-запис</button>
+        <a href="#online">
+          <button type="button" class="contacts__btn btn btn--light">онлайн-запис</button>
+        </a>
+      </div>
+    </div>
+
+    <!-- Мобільне меню -->
+    <div class="mobile-menu is-hidden">
+      <div class="mobile-menu__container">
+        <button type="button" class="menu-close-btn">
+          <svg class="menu-close-btn__icon" width="40" height="40">
+            <use href="./images/icons.svg#mobile-close-icon"></use>
+          </svg>
+        </button>
+        <ul class="mobile-menu__list list">
+          <li class="mobile-menu__item">
+            <a href="#about" class="mobile-menu__link">Про нас</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#prices" class="mobile-menu__link">Послуги та ціни</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#masters" class="mobile-menu__link">Майстри</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#reasons" class="mobile-menu__link">Чому ми?</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#gallery" class="mobile-menu__link">Галерея</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#contacts" class="mobile-menu__link">Контакти</a>
+          </li>
+        </ul>
+        <div class="mobile-menu__contacts">
+          <a href="tel:+380441111111" class="mobile-menu__tel" aria-label="Phone">+38 044 111 11 11</a>
+          <a href="#online">
+            <button type="button" class="mobile-menu__btn btn btn--light">онлайн-запис</button>
+          </a>
+        </div>
+
+        <div class="mobile-social">
+          <ul class="mobile-social__list list">
+            <li class="mobile-social__item">
+              <a 
+                href="https://www.instagram.com/" 
+                class="mobile-social__link" 
+                target="_blank" 
+                rel="noopener noreferrer nofollow"
+                aria-label="Instagram"
+                >Instagram</a
+              >
+            </li>
+            <li class="mobile-social__item">
+              <a 
+                href="https://www.youtube.com/" 
+                class="mobile-social__link" 
+                target="_blank" 
+                rel="noopener noreferrer nofollow" 
+                aria-label="Youtube"
+                >Youtube</a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </header>
@@ -154,7 +222,9 @@
             Ми команда, яка завжди з клієнтами "на одній хвилі".
             Тому, ми завжди готові покращити кожного, хто до нас приходить!
           </p>
-          <button type="button" class="about__btn btn">онлайн-запис</button>
+          <a href="#online">
+            <button type="button" class="about__btn btn">онлайн-запис</button>
+          </a>
         </div>
       </div>
     </section>
@@ -204,8 +274,9 @@
             </li>
           </ul>
         </div>
-
-        <button type="button" class="prices__btn btn">онлайн-запис</button>
+        <a href="#online">
+          <button type="button" class="prices__btn btn">онлайн-запис</button>
+        </a>
       </div>
     </section>
 
@@ -553,7 +624,7 @@
     <!-- Онлайн-запис -->
     <div class="online-contacts">
       <div class="container online-contacts__container">
-        <section class="online">
+        <section class="online" id="online">
           <h2 class="online__title section-title">Онлайн-запис</h2>
           <form class="online__form">
             <div class="online__wrap">

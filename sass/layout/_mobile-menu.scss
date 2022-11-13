@@ -1,0 +1,148 @@
+.menu-open-btn {
+  position: absolute;
+  top: 48px;
+  right: 30px;
+  display: block;
+  margin-left: auto;
+  padding: 0;
+  border: none;
+  fill: var(--header-text-color);
+  background-color: transparent;
+
+  transition: color 250ms var(--transition-cubic);
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
+
+  @include tablet {
+    display: none;
+  }
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+  padding: 100px 50px;
+  overflow-y: auto;
+  background-color: var(--second-bg-color);
+
+  transition: opacity 500ms, visibility 500ms;
+}
+
+.mobile-menu__container {
+  display: block;
+  width: 480px;
+  margin: 0 auto;
+}
+
+.menu-close-btn {
+  position: absolute;
+  top: 48px;
+  right: 30px;
+  display: block;
+  margin-left: auto;
+  padding: 0;
+  border: none;
+  fill: var(--second-btn-color);
+  background-color: transparent;
+
+  transition: color 250ms var(--transition-cubic);
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
+}
+
+.mobile-menu__item {
+  &:not(:nth-child(6)) {
+    margin-bottom: 24px;
+  }
+}
+
+.mobile-menu__link {
+  @include font(600, 18px, 1.36, 0.1em);
+  color: var(--second-title-color);
+
+  transition: color 250ms var(--transition-cubic);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.mobile-menu__contacts {
+  display: flex;
+  flex-direction: column;
+}
+
+.mobile-menu__tel {
+  margin-top: 54px;
+  @include font(600, 18px, 1.36, 0.1em);
+  color: var(--social-link-color);
+}
+
+.mobile-menu__btn {
+  width: 194px;
+  margin-top: 24px;
+  font-family: inherit;
+  @include font(600, 12px, 1.33, 0.09em);
+  text-transform: uppercase;
+
+  color: var(--social-link-color);
+  background-color: transparent;
+
+  transition: color 250ms var(--transition-cubic),
+    background-color 250ms var(--transition-cubic);
+
+  &:hover,
+  &:focus {
+    color: var(--first-btn-color);
+    background-color: var(--accent-color);
+  }
+}
+
+.mobile-social {
+}
+
+.mobile-social__list {
+  display: flex;
+  align-items: center;
+  margin-top: 54px;
+
+  &::before {
+    content: '';
+    display: block;
+    flex-shrink: 0;
+    width: 60px;
+    height: 1px;
+    margin-right: 40px;
+
+    background-color: var(--social-link-color);
+  }
+}
+
+.mobile-social__item + .mobile-social__item {
+  margin-left: 20px;
+}
+
+.mobile-social__link {
+  @include font(600, 14px, 1.36, 0.2em);
+  color: var(--social-link-color);
+
+  transition: color 250ms var(--transition-cubic);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}

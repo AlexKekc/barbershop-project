@@ -132,6 +132,9 @@
   }
 
   @include desktop {
+    ont-family: inherit;
+    @include font(600, 12px, 1.33, 0.09em);
+    text-transform: uppercase;
     margin-bottom: 0;
     margin-left: 40px;
   }

@@ -90,7 +90,6 @@
   @include font(600, 12px, 1.33, 0.09em);
   text-transform: uppercase;
 
-  color: var(--second-btn-color);
   background-color: transparent;
 
   transition: color 250ms var(--transition-cubic),
