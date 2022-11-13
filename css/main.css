@@ -369,7 +369,6 @@ a {
   padding: 100px 50px;
   overflow-y: auto;
   background-color: var(--second-bg-color);
-  transition: opacity 500ms, visibility 500ms;
 }
 
 .mobile-menu__container {
